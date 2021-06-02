@@ -1,0 +1,226 @@
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* header style */
+
+.logo img {
+    height: 150px;
+}
+
+.nav-bar { 
+    background: brown;
+    padding: .2em 0;
+}
+
+.nav-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu-items {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 400ms all;
+    margin-left: 2em;
+}
+
+.nav-menu-items:hover {
+    color: #000;
+}
+
+/* footer style */
+
+.footer {
+    background: url(img/bg.jpg);
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+/* home style */
+
+.main-home, .banner-container, .banner-section .banner, .sobre, .mapa, .beneficios {
+    width: 100%;
+}
+
+.banner-container {
+    width: 100%;
+    height: 45vh;
+}
+
+.banner-container img {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.divisoria {
+    width: 20%;
+    margin-top: 1em;
+}
+
+.container, .video-container, .missao-container {
+    display: flex;
+    padding: 1.5em 0;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.sobre .container {
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.sobre .container .img-utensilios {
+    width: 100%;
+}
+
+.sobre .container .descricao-sobre {
+    padding: 2em 5em;
+    background: #fff;
+    line-height: 1.5em;
+}
+
+.missao-container .missao {
+    text-align: center;
+    font-size: 2.5em;
+    color: whitesmoke;
+    background: brown;
+    padding: 1em;
+    line-height: 1.5em;
+}
+
+.sobre, .mapa, .banner-section {
+    background: whitesmoke;
+}
+
+.beneficios {
+    background: #000;
+}
+
+.sobre .descricao-sobre p:first-child{
+    margin: 0 0 1.2em;
+}
+
+.sobre .descricao-sobre strong, .missao-container .missao strong {
+    font-weight: bold;
+}
+
+.sobre .descricao-sobre em, .missao-container .missao em {
+    font-style: italic;
+}
+
+.sub-titulo, .sub-titulo-beneficios {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.mapa .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapa .container .descricao-mapa {
+    font-size: 1.5em;
+    margin-bottom: 1.2em;
+}
+
+.sub-titulo-beneficios {
+    color: whitesmoke;
+}
+
+.beneficios .container {
+    color: whitesmoke;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.lista-beneficios {
+    width: 40%;
+    padding: 1em;
+}
+
+.itens {
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.itens:before {
+    content: "✦ ";
+    color: whitesmoke;
+}
+
+.img-beneficios {
+    width: 60%;
+}
+
+.video-container {
+    height: auto;
+}
+
+/* home mobile */
+
+@media screen and (max-width: 960px) {
+    .container, .missao-container, .video-container, .nav-menu {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .nav-menu li {
+        padding: .5em 0;
+        text-align: center;
+        border-bottom: 1px solid whitesmoke;
+    }
+
+     .nav-menu-items { 
+        margin: 0;
+     }
+
+     .sobre .container .descricao-sobre {
+        padding: 1em .5em;
+     }
+
+     .missao-container .missao {
+         font-size: 1.5em;
+     }
+
+     .mapa .container .descricao-mapa {
+         text-align: center;
+         font-size: 1em;
+     }
+
+     .beneficios .img-beneficios {
+        width: 100%;
+     }
+
+     .lista-beneficios {
+        width: 100%;
+        padding: 1.5em 0 0 0;
+     }
+}
